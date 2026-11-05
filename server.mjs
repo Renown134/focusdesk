@@ -19,7 +19,12 @@ const MIME = {
 };
 
 function resolvePath(urlPath) {
-  const decoded = decodeURIComponent(urlPath.split('?')[0]);
+  let decoded;
+  try {
+    decoded = decodeURIComponent(urlPath.split('?')[0]);
+  } catch {
+    return null;
+  }
   const relative = decoded === '/' ? 'index.html' : decoded.replace(/^\/+/, '');
   const candidate = normalize(join(root, relative));
   if (!candidate.startsWith(root.endsWith(sep) ? root : root + sep)) {
