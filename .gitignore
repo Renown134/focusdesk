@@ -1,0 +1,14 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local
+.env
+*.local
+.preview/

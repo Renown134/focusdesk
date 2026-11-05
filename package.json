@@ -1,0 +1,21 @@
+{
+  "name": "focusdesk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Один фокус на день: три задачи, влияние и срочность, одна карточка фокуса.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "focus",
+    "product-management",
+    "prioritization",
+    "vanilla-js"
+  ],
+  "license": "MIT"
+}
